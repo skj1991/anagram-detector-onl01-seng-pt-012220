@@ -5,7 +5,9 @@ class Anagram
   end
 
   def match(array)
-
+    array.group_by do |word|
+      word.chars.sort
+    end
   end
 
 end
