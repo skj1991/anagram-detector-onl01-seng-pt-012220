@@ -1,13 +1,15 @@
 class Anagram
-  attr_reader :word
-  def initialize(word)
-    @word = word
+  attr_reader :words
+  def initialize(words)
+    @words = words
   end
 
   def match(array)
-    array.group_by do |word|
-      word.chars.sort.join("")
-    end
+    find_this.find_all do |word| 
+
+      if word.split("").sort == self.array_words.split("").sort 
+        word 
+      end
   end
 
 end
