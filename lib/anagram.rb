@@ -6,7 +6,7 @@ class Anagram
 
   def match(array)
     array.group_by do |word|
-      word.chars.sort
+      word.chars.sort.join("")
     end
   end
 
