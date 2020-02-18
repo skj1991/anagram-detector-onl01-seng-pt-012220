@@ -1,4 +1,5 @@
 class Anagram
+  
   attr_reader :words
   def initialize(words)
     @words = words
@@ -11,4 +12,5 @@ class Anagram
       end
     end
   end
+
 end
